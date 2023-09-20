@@ -1,10 +1,20 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
+  import Navbar from './components/Navbar.vue';
+  import Home from './pages/Home.vue'
 </script>
 
 <template>
-  <div class="container">
-    <h1>Welcome to Helios!</h1>
-  </div>
+    <div :class="$style.container">
+      <Navbar />
+      <Home />
+    </div>
 </template>
+
+
+<style module>
+.container{
+  margin: 0;
+  padding: 0;
+}
+
+</style>
