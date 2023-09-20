@@ -30,7 +30,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    background-color: #8c1514;
+    background-color: #111;
     display: flex;
     flex-direction: column;
     border: none;
@@ -55,7 +55,7 @@
     background-color: transparent;
     cursor: pointer;
     font-size: large;
-    background-color: #111;
+    background-color: #222;
     color: #fff;
 }
 </style>
