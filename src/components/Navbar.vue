@@ -5,20 +5,21 @@
 
     <div :class="$style.container">
 
-        <span>
-            <button :class="$style.btn">
-                <font-awesome-icon :icon="['fas', 'bars']" />
-                <font-awesome-icon icon="fa-solid fa-user-secret" />
-            </button>
-        </span>
+                <ul :class="$style.list">
+                    <li :class="[$style.item , $style.logo]">
+                        <font-awesome-icon :class="$style.icon" :icon="['fas', 'fire']" />
+                    </li>
+                    <li :class="[$style.item]">
+                        <font-awesome-icon :class="$style.icon" :icon="['fas', 'chart-bar']" />
+                    </li>
+                    <li :class="$style.item">
+                        <font-awesome-icon :class="$style.icon" :icon="['fas', 'layer-group']" />
+                    </li>
+                    <li :class="$style.item ">
+                        <font-awesome-icon :class="$style.icon" :icon="['fas', 'gear']" />
+                    </li>
+                </ul>
 
-        <ul :class="$style.list">
-            <li>option1</li>
-            <li>optoin2</li>
-            <li>option3</li>
-            <li>optoin4</li>
-            <li>option5</li>
-        </ul>
 
     </div>
 
@@ -30,9 +31,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    background-color: #111;
-    display: flex;
-    flex-direction: column;
+    background-color: #24292E;
     border: none;
     width: 7vw;
     box-shadow: 5px 0px 10px #666;
@@ -42,20 +41,36 @@
 
 .list{
     display: flex;
+    height: 100%;
     flex-direction: column;
-    visibility: hidden;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-.btn{
-    margin-top: 0;
+.item{
+    margin: 0;
     width: 100%;
     height: 55px;
-    box-shadow: none;
     border: none;
-    background-color: transparent;
     cursor: pointer;
-    font-size: large;
-    background-color: #222;
+    display: flex;
     color: #fff;
+}
+.icon{
+    margin: auto;
+    font-size: larger;
+    transition: 0.5s;
+}
+.item:hover{
+    color: #f9826C;
+}
+.logo{
+    color: #f9826C;
+}
+.active{
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: #f9826C;
 }
 </style>
