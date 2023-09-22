@@ -15,7 +15,7 @@
     position: fixed;
     margin: 0;
     top: 0;
-    left: -25vw;
+    left: 6.5vw;
     display: flex;
     flex-direction: column;
     width: 25vw;
@@ -25,8 +25,14 @@
     background-color: #1f2428;
 }
 .title{
-    margin: auto;
-    margin-top: 15px;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    font-weight: 400;
+    border-bottom-color: #333;
+    width: 100%;
+    border-bottom-width: 1px;
 }
 </style>
 

@@ -67,6 +67,7 @@
 }
 .logo{
     color: #f9826C;
+    cursor: default;
 }
 .active{
     border-left-width: 2px;

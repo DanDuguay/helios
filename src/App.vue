@@ -1,13 +1,11 @@
 <script setup lang="ts">
   import Navbar from './components/Navbar.vue';
   import Home from './pages/Home.vue'
-  import ExpandedNav from './components/ExpandedNav.vue';
 </script>
 
 <template>
+    <Navbar />
     <div :class="$style.container">
-      <Navbar />
-      <ExpandedNav />
       <Home />
     </div>
 </template>
@@ -15,8 +13,10 @@
 
 <style module>
 .container{
-  margin: 0;
+  margin-left: 7vw;
   padding: 0;
+  display: flex;
+  width: 93vw;
 }
 
 </style>
