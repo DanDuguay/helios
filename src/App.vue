@@ -1,12 +1,13 @@
 <script setup lang="ts">
   import Navbar from './components/Navbar.vue';
   import Home from './pages/Home.vue'
+  import Add from './pages/Add.vue';
 </script>
 
 <template>
     <Navbar />
     <div :class="$style.container">
-      <Home />
+      <Add />
     </div>
 </template>
 

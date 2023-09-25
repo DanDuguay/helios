@@ -13,6 +13,9 @@
                         <font-awesome-icon :class="$style.icon" :icon="['fas', 'chart-bar']" />
                     </li>
                     <li :class="$style.item">
+                        <font-awesome-icon :class="$style.icon" :icon="['fas', 'plus']" />
+                    </li>
+                    <li :class="$style.item">
                         <font-awesome-icon :class="$style.icon" :icon="['fas', 'layer-group']" />
                     </li>
                     <li :class="$style.item ">
