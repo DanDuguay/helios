@@ -1,13 +1,12 @@
 <script setup lang="ts">
   import Navbar from './components/Navbar.vue';
-  import Home from './pages/Home.vue'
-  import Add from './pages/Add.vue';
+  import { RouterView } from 'vue-router';
 </script>
 
 <template>
     <Navbar />
     <div :class="$style.container">
-      <Add />
+      <RouterView />
     </div>
 </template>
 

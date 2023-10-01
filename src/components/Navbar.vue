@@ -1,4 +1,6 @@
 <script setup lang="ts">
+
+
 </script>
 
 <template>
@@ -6,20 +8,35 @@
     <div :class="$style.container">
 
                 <ul :class="$style.list">
+
                     <li :class="[$style.item , $style.logo]">
-                        <font-awesome-icon :class="$style.icon" :icon="['fas', 'fire']" />
+                        <router-link to="/">
+                            <font-awesome-icon :class="$style.icon" :icon="['fas', 'fire']" />
+                        </router-link>
                     </li>
+                    
                     <li :class="[$style.item]">
-                        <font-awesome-icon :class="$style.icon" :icon="['fas', 'chart-bar']" />
+                        <router-link to="/simulations">
+                            <font-awesome-icon :class="$style.icon" :icon="['fas', 'chart-bar']" />
+                        </router-link>
                     </li>
+
                     <li :class="$style.item">
-                        <font-awesome-icon :class="$style.icon" :icon="['fas', 'plus']" />
+                        <router-link to="/add">
+                            <font-awesome-icon :class="$style.icon" :icon="['fas', 'plus']" />
+                        </router-link>
                     </li>
+
                     <li :class="$style.item">
-                        <font-awesome-icon :class="$style.icon" :icon="['fas', 'layer-group']" />
+                        <router-link to="/groups">
+                            <font-awesome-icon :class="$style.icon" :icon="['fas', 'layer-group']" />
+                        </router-link>
                     </li>
-                    <li :class="$style.item ">
-                        <font-awesome-icon :class="$style.icon" :icon="['fas', 'gear']" />
+
+                    <li :class="$style.item">
+                        <router-link to="/setting">
+                            <font-awesome-icon :class="$style.icon" :icon="['fas', 'gear']" />
+                        </router-link>
                     </li>
                 </ul>
 

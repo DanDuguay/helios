@@ -4,7 +4,7 @@
 <template>
     <div :class="$style.container">
         <h1 :class="$style.title">
-            Welcome to Helios🔥
+            Groups
         </h1>
     </div>
 </template>
