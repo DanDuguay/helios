@@ -15,7 +15,8 @@
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "@tauri-apps/api": "^1.4.0",
     "rust": "^0.1.6",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.4.0",
