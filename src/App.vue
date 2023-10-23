@@ -16,6 +16,7 @@
   margin-left: 7vw;
   padding: 0;
   display: flex;
+  flex-direction: column;
   width: 93vw;
 }
 
